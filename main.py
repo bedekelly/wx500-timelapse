@@ -21,6 +21,12 @@ def setup_camera():
     	"id": 1,
     	"version": "1.0"
     })
+    requests.post(API_URL, json={
+	"method": "setPostviewImageSize",
+	"params": ["Original"],
+	"id": 1,
+	"version": "1.0"
+    })
 
 
 def take_photo():
